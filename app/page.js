@@ -2,6 +2,9 @@
 import { useState, useEffect } from "react";
 import { fetchAllParticipants } from "../actions"
 
+// export const fetchCache ='only-no-store';
+
+
 export default function Home() {
   const [participants, setParticipants]  = useState([]);
 

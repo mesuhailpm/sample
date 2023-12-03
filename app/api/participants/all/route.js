@@ -1,6 +1,8 @@
 import connectToDb from '@utils/connectToDb'
 import Participant from '@models/Participant'
-export const GET = async () => {
+export const dynamic = 'force-dynamic';
+// export const fetchCache ='only-no-store';
+export async function GET  ()  {
     try {
         await connectToDb()
         const allParticipants = await Participant.find()
